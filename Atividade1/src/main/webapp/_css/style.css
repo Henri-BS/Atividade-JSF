@@ -1,0 +1,37 @@
+body {
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	background: linear-gradient(0deg, rgba(3, 112, 112, 1) 7%,
+		rgba(14, 173, 173, 1) 46%, rgba(14, 201, 115, 1) 99%);
+}
+
+img {
+	border-radius: 100%;
+	border: 3px solid rgb(180, 241, 223);
+	float: right;
+	height: 200px;
+	width: 200px;
+}
+
+fieldset {
+	margin-bottom: 10px;
+	border-radius: 12px;
+}
+
+legend {
+	background-color: transparent;
+	padding: 6px;
+	border: 3px solid rgb(180, 241, 223);
+	border-radius: 12px;
+	font-weight: 800;
+}
+
+div {
+	color: rgb(0, 0, 0);
+	background-color: white;
+	padding: 16px;
+	border-radius: 12px;
+}
+
+ul {
+	list-style: circle;
+}

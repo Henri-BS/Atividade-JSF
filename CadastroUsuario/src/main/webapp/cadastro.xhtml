@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Atividade3</title>
+	<link rel="stylesheet" href="css/main.css" />
+</h:head>
+<h:body>
+	<h:form id="cadastro" class="form-box">
+		<h2>Cadastro de Usuário</h2>
+		<div class="input-box">
+			<h:outputLabel for="nome">Nome: </h:outputLabel>
+			<h:inputText id="nome" value="#{pessoasBean.pessoa.nome}"
+				requiered="true" requieredMessage="Este campo é obrigatório" />
+		</div>
+		<div>
+			<h:commandButton id="submit-button" class="button-box"
+				action="#{pessoasBean.cadastra()}" value="Cadastrar" />
+		</div>
+		<hr />
+		<h2>Lista de Usuários</h2>
+		<h:dataTable class="output-box" var="pessoa"
+			value="#{pessoasBean.lista()}"
+			rendered="#{pessoasBean.lista().size()>0}">
+			<h:column class="column-box">
+				<h:outputText value="#{pessoa.nome}" />
+			</h:column>
+		</h:dataTable>
+	</h:form>
+</h:body>
+</html>
